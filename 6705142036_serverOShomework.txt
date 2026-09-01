@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705142036
+timestamp: 2026-09-01T10:20:35Z
+hostname: ubuntu
+---[user: getent passwd]---
+emma448:x:1001:1003::/home/emma448:/bin/sh
+---[group: getent group]---
+netadmins:x:1002:emma448
+---[user-in-group: id]---
+uid=1001(emma448) gid=1003(emma448) groups=1003(emma448),1002(netadmins)
+---[file stat: home file mode/owner]---
+/home/emma448/report_4267.txt mode=644 owner=emma448 group=emma448
+---[sshd effective config]---
+port 2540
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: 5e7f68eb0329ea7f231a65a8104718b4ebcf850d6096dc23bac2922c30a2cd6f
+===END LAB1 SUBMISSION===
